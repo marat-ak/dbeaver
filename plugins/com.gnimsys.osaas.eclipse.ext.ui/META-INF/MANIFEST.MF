@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OSaaSJDBC UI
+Bundle-SymbolicName: com.gnimsys.osaas.eclipse.ext.ui;singleton:=true
+Bundle-Version: 1.0.160.qualifier
+Bundle-Release-Date: 20241007
+Bundle-Activator: com.gnimsys.osaas.eclipse.ext.osaasjdbc.ui.internal.OSaaSJDBCUIActivator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.views,
+ org.eclipse.ui.workbench,
+ org.eclipse.ui.workbench.texteditor,
+ org.jkiss.dbeaver.core,
+ org.jkiss.dbeaver.ext.generic.ui,
+ com.gnimsys.osaas.eclipse.ext.core
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-Vendor: Gnimsys
+Bundle-Localization: OSGI-INF/l10n/bundle
+Export-Package: com.gnimsys.osaas.eclipse.ext.osaasjdbc.ui,
+ com.gnimsys.osaas.eclipse.ext.osaasjdbc.ui.config
+Automatic-Module-Name: org.jkiss.dbeaver.ext.osaasjdbc.ui

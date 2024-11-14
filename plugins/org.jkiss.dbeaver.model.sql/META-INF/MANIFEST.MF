@@ -43,7 +43,8 @@ Require-Bundle: org.eclipse.core.runtime,
  com.google.gson,
  org.eclipse.text;visibility:=reexport,
  org.jkiss.dbeaver.model;visibility:=reexport,
- org.jkiss.dbeaver.model.lsm
+ org.jkiss.dbeaver.model.lsm,
+ org.eclipse.jface.text
 Bundle-Localization: OSGI-INF/l10n/bundle
 Automatic-Module-Name: org.jkiss.dbeaver.model.sql
 Service-Component: META-INF/component-sql-dialect-registry.xml

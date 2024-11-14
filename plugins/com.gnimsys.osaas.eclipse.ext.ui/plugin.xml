@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+
+<plugin>
+
+    <extension point="org.jkiss.dbeaver.dataSourceView">
+        <view
+                id="com.gnimsys.osaas.eclipse.ext.osaasjdbc.dataSourceWizardView"
+                targetID="org.jkiss.dbeaver.ext.ui.newConnectionWizard"
+                dataSource="osaasjdbc,osaasjdbc_ee,osaasjdbc_logical"
+                label="%osaasjdbc.dialog.connection.header"
+                class="com.gnimsys.osaas.eclipse.ext.osaasjdbc.ui.OSaaSJDBCConnectionPage"
+                icon="platform:/plugin/com.gnimsys.osaas.eclipse.ext.core/icons/osaasjdbc_icon.png">
+        </view>
+        <view
+                class="com.gnimsys.osaas.eclipse.ext.osaasjdbc.ui.OSaaSJDBCConnectionPage"
+                icon="platform:/plugin/com.gnimsys.osaas.eclipse.ext.core/icons/osaasjdbc_icon.png"
+                id="com.gnimsys.osaas.eclipse.ext.osaasjdbc.dataSourceEditorView"
+                dataSource="osaasjdbc,osaasjdbc_ee,osaasjdbc_logical"
+                label="%osaasjdbc.dialog.connection.header"
+                targetID="org.jkiss.dbeaver.ext.ui.editConnectionDialog">
+        </view>
+        <view
+                id="com.gnimsys.osaas.eclipse.ext.osaasjdbc.dataSourceWizardView_subject"
+                targetID="org.jkiss.dbeaver.ext.ui.newConnectionWizard"
+                dataSource="osaasjdbc_logical"
+                label="%osaasjdbc.dialog.connection.header"
+                class="com.gnimsys.osaas.eclipse.ext.osaasjdbc.ui.OSaaSJDBCConnectionPage"
+                icon="platform:/plugin/com.gnimsys.osaas.eclipse.ext.core/icons/osaasjdbc_subject_icon.png">
+        </view>
+        <view
+                class="com.gnimsys.osaas.eclipse.ext.osaasjdbc.ui.OSaaSJDBCConnectionPage"
+                icon="platform:/plugin/com.gnimsys.osaas.eclipse.ext.core/icons/osaasjdbc_subject_icon.png"
+                id="com.gnimsys.osaas.eclipse.ext.osaasjdbc.dataSourceEditorView_subject"
+                dataSource="osaasjdbc_logical"
+                label="%osaasjdbc.dialog.connection.header"
+                targetID="org.jkiss.dbeaver.ext.ui.editConnectionDialog">
+        </view>
+    </extension>
+
+    <extension point="org.jkiss.dbeaver.ui.propertyConfigurator">
+        <propertyConfigurator class="com.gnimsys.osaas.eclipse.ext.osaasjdbc.model.auth.OSaaSJDBCAuthModelOSaaSJDBC" uiClass="com.gnimsys.osaas.eclipse.ext.osaasjdbc.ui.config.OSaaSJDBCAuthOSaaSJDBCConfigurator"/>
+        <propertyConfigurator class="com.gnimsys.osaas.eclipse.ext.osaasjdbc.model.auth.OSaaSJDBCAuthModelSSO" uiClass="com.gnimsys.osaas.eclipse.ext.osaasjdbc.ui.config.OSaaSJDBCAuthSSOConfigurator"/>
+        
+    </extension>
+
+</plugin>

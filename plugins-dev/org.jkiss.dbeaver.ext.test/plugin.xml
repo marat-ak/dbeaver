@@ -67,7 +67,7 @@
                 <command commandId="org.jkiss.dbeaver.test.showNotification"/>
                 <command commandId="org.jkiss.dbeaver.test.showIcons"/>
 
-                <separator visible="true"/>
+                <separator name="some" visible="true"/>
                 <command commandId="org.eclipse.ui.views.showView">
                     <parameter name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.swt.tools.views.SpyView"/>
                 </command>
